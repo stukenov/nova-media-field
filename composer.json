@@ -23,7 +23,7 @@
   "require": {
     "php": ">=8.0.0",
     "intervention/image": "^2.7.1",
-    "laravel/nova": "~3.0",
+    "laravel/nova": "~4.35",
     "php-ffmpeg/php-ffmpeg": "^1.0.1",
     "guzzlehttp/guzzle": "^7.0.0"
   },
