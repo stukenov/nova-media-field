@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/" # Путь к файлу composer.json (обычно корневая директория)
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "npm"
+    directory: "/" # Путь к файлу package.json (если он находится в корне проекта)
+    schedule:
+      interval: "daily"
