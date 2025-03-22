@@ -1,5 +1,5 @@
 <?php
-namespace OptimistDigital\MediaField\Filters;
+namespace STukenov\MediaField\Filters;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;

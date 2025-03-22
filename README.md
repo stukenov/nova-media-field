@@ -8,8 +8,8 @@
 
 # Nova Media Field
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/optimistdigital/nova-media-field.svg?style=flat-square)](https://packagist.org/packages/optimistdigital/nova-media-field)
-[![Total Downloads](https://img.shields.io/packagist/dt/optimistdigital/nova-media-field.svg?style=flat-square)](https://packagist.org/packages/optimistdigital/nova-media-field)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stukenov/nova-media-field.svg?style=flat-square)](https://packagist.org/packages/stukenov/nova-media-field)
+[![Total Downloads](https://img.shields.io/packagist/dt/stukenov/nova-media-field.svg?style=flat-square)](https://packagist.org/packages/stukenov/nova-media-field)
 
 This [Laravel Nova](https://nova.laravel.com) package adds a simple media upload field with a media browser to Laravel Nova.
 
@@ -28,11 +28,11 @@ This [Laravel Nova](https://nova.laravel.com) package adds a simple media upload
 - Collections
 - Thumbnail generator with custom sizes (also re-generation via command)
 - WebP generator (also re-generation via command)
-- Works with [nova-translatable](https://github.com/optimistdigital/nova-translatable)
+- Works with [nova-translatable](https://github.com/stukenov/nova-translatable)
 
 ## Upgrading to v2
 
-Check [CHANGELOG.MD](https://github.com/optimistdigital/nova-media-field/blob/v2/CHANGELOG.md)
+Check [CHANGELOG.MD](https://github.com/stukenov/nova-media-field/blob/v2/CHANGELOG.md)
 
 ## Installation
 
@@ -40,7 +40,7 @@ Install the package in a Laravel Nova project via Composer and run migrations:
 
 ```bash
 # Install package
-composer require optimistdigital/nova-media-field
+composer require stukenov/nova-media-field
 
 # And then run migrations
 php artisan migrate
@@ -49,12 +49,12 @@ php artisan migrate
 And then register the `NovaMediaLibrary` tool in `NovaServiceProvider`:
 
 ```
-use OptimistDigital\MediaField\NovaMediaLibrary;
+use STukenov\MediaField\NovaMediaLibrary;
 
 public function tools()
 {
     return [
-        new \OptimistDigital\MediaField\NovaMediaLibrary,
+        new \STukenov\MediaField\NovaMediaLibrary,
     ];
 }
 ```
@@ -62,7 +62,7 @@ public function tools()
 ## Usage
 
 ```
-use OptimistDigital\MediaField\MediaField;
+use STukenov\MediaField\MediaField;
 
 // ...
 
@@ -203,13 +203,13 @@ This package allows overriding of core logic for any custom needs project may ha
 # config/nova-media-field.php
 [
     // media_handler is core class that handles file uploads, storage and thumbnail generation
-    'media_handler' => \OptimistDigital\MediaField\Classes\MediaHandler::class,
+    'media_handler' => \STukenov\MediaField\Classes\MediaHandler::class,
 
     // media_resource is nova resource class for Media
-    'media_resource' => \OptimistDigital\MediaField\Media::class,
+    'media_resource' => \STukenov\MediaField\Media::class,
 
     // media_model is laravel modal used throughout this package
-    'media_model' => \OptimistDigital\MediaField\Models\Media::class,
+    'media_model' => \STukenov\MediaField\Models\Media::class,
 ]
 
 ```

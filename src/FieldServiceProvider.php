@@ -1,17 +1,17 @@
 <?php
 
-namespace OptimistDigital\MediaField;
+namespace STukenov\MediaField;
 
 use Laravel\Nova\Nova;
 use Illuminate\Support\Facades\Route;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
-use OptimistDigital\MediaField\Classes\MediaHandler;
-use OptimistDigital\MediaField\Commands\OptimizeOriginals;
-use OptimistDigital\MediaField\Commands\RegenerateThumbnails;
-use OptimistDigital\MediaField\Commands\RegenerateWebp;
-use OptimistDigital\MediaField\Commands\StripPublicPrefixFromPath;
+use STukenov\MediaField\Classes\MediaHandler;
+use STukenov\MediaField\Commands\OptimizeOriginals;
+use STukenov\MediaField\Commands\RegenerateThumbnails;
+use STukenov\MediaField\Commands\RegenerateWebp;
+use STukenov\MediaField\Commands\StripPublicPrefixFromPath;
 
 class FieldServiceProvider extends ServiceProvider
 {
@@ -46,7 +46,7 @@ class FieldServiceProvider extends ServiceProvider
         Route::middleware(config('nova-media-field.middlewares', []))
             ->group(__DIR__ . '/routes.php');
 
-        Validator::extend('height', '\OptimistDigital\MediaField\Classes\MediaValidator@height');
+        Validator::extend('height', '\STukenov\MediaField\Classes\MediaValidator@height');
 
         Nova::serving(function (ServingNova $event): void {
             Nova::script('media-field', __DIR__ . '/../dist/js/field.js');

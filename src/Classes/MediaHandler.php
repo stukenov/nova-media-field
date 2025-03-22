@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\MediaField\Classes;
+namespace STukenov\MediaField\Classes;
 
 use Exception;
 use FFMpeg\FFMpeg;
@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;
-use OptimistDigital\MediaField\Models\Media;
-use OptimistDigital\MediaField\NovaMediaLibrary;
-use OptimistDigital\MediaField\Traits\ResolvesMedia;
+use STukenov\MediaField\Models\Media;
+use STukenov\MediaField\NovaMediaLibrary;
+use STukenov\MediaField\Traits\ResolvesMedia;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Intervention\Image\Exception\NotSupportedException;

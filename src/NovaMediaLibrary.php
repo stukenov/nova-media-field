@@ -1,7 +1,7 @@
 <?php
 
 
-namespace OptimistDigital\MediaField;
+namespace STukenov\MediaField;
 
 use Laravel\Nova\Tool;
 

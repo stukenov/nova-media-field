@@ -1,11 +1,11 @@
 <?php
 
-namespace OptimistDigital\MediaField\Commands;
+namespace STukenov\MediaField\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
-use OptimistDigital\MediaField\Classes\MediaHandler;
-use OptimistDigital\MediaField\Models\Media;
+use STukenov\MediaField\Classes\MediaHandler;
+use STukenov\MediaField\Models\Media;
 
 class RegenerateThumbnails extends Command
 {

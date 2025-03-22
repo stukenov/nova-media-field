@@ -1,8 +1,8 @@
 <?php
 
-namespace OptimistDigital\MediaField\Traits;
+namespace STukenov\MediaField\Traits;
 
-use OptimistDigital\MediaField\Models\Media;
+use STukenov\MediaField\Models\Media;
 
 trait ResolvesMedia
 {

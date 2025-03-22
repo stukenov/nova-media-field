@@ -1,12 +1,12 @@
 <?php
 
-namespace OptimistDigital\MediaField\Models;
+namespace STukenov\MediaField\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-use OptimistDigital\MediaField\Casts\Json;
-use OptimistDigital\MediaField\Classes\MediaHandler;
+use STukenov\MediaField\Casts\Json;
+use STukenov\MediaField\Classes\MediaHandler;
 
 class Media extends Model
 {

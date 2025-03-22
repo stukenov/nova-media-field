@@ -1,21 +1,21 @@
 {
-  "name": "optimistdigital/nova-media-field",
+  "name": "stukenov/nova-media-field",
   "description": "Laravel Nova field for image/gallery upload and library browsing.",
   "keywords": [
     "laravel",
     "nova",
-    "optimistdigital",
+    "stukenov",
     "media"
   ],
   "authors": [
     {
       "name": "Marttin Notta",
-      "email": "marttinnotta@optimistdigital.com",
+      "email": "marttinnotta@stukenov.com",
       "role": "Developer"
     },
     {
       "name": "Optimist Digital",
-      "email": "info@optimistdigital.com",
+      "email": "info@stukenov.com",
       "role": "Maintainer"
     }
   ],
@@ -35,7 +35,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "OptimistDigital\\MediaField\\": [
+      "STukenov\\MediaField\\": [
         "src/"
       ]
     }
@@ -43,7 +43,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "OptimistDigital\\MediaField\\FieldServiceProvider"
+        "STukenov\\MediaField\\FieldServiceProvider"
       ]
     }
   },

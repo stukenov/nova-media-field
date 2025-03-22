@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\MediaField\Classes;
+namespace STukenov\MediaField\Classes;
 
 use Illuminate\Validation\Validator;
 use Intervention\Image\Facades\Image;

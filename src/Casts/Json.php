@@ -1,6 +1,6 @@
 <?php
  
-namespace OptimistDigital\MediaField\Casts;
+namespace STukenov\MediaField\Casts;
  
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
  

@@ -1,14 +1,14 @@
 <?php
 
-namespace OptimistDigital\MediaField\Controllers;
+namespace STukenov\MediaField\Controllers;
 
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Storage;
-use OptimistDigital\MediaField\Models\Media;
-use OptimistDigital\MediaField\Classes\MediaHandler;
-use OptimistDigital\MediaField\Requests\StoreMediaRequest;
+use STukenov\MediaField\Models\Media;
+use STukenov\MediaField\Classes\MediaHandler;
+use STukenov\MediaField\Requests\StoreMediaRequest;
 
 class MediaController extends Controller
 {

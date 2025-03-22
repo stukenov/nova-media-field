@@ -442,12 +442,12 @@ Initial public release.
 In your `NovaServiceProvider` class add or update `tools` method
 
 ```
-use OptimistDigital\MediaField\NovaMediaLibrary;
+use STukenov\MediaField\NovaMediaLibrary;
 
 public function tools()
 {
     return [
-        new \OptimistDigital\MediaField\NovaMediaLibrary,
+        new \STukenov\MediaField\NovaMediaLibrary,
     ];
 }
 ```

@@ -42,9 +42,9 @@ return [
     /**
      * Class overrides
      */
-    'media_handler' => \OptimistDigital\MediaField\Classes\MediaHandler::class,
-    'media_resource' => \OptimistDigital\MediaField\Media::class,
-    'media_model' => \OptimistDigital\MediaField\Models\Media::class,
+    'media_handler' => \STukenov\MediaField\Classes\MediaHandler::class,
+    'media_resource' => \STukenov\MediaField\Media::class,
+    'media_model' => \STukenov\MediaField\Models\Media::class,
 
     /**
      * When enabled, the package will try to avoid storing duplicate media files.

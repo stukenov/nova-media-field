@@ -1,6 +1,6 @@
 <?php
 
-namespace OptimistDigital\MediaField;
+namespace STukenov\MediaField;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -9,11 +9,11 @@ use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Resource;
-use OptimistDigital\MediaField\Filters\Collection;
+use STukenov\MediaField\Filters\Collection;
 
 class Media extends Resource
 {
-    public static $model = '\OptimistDigital\MediaField\Models\Media';
+    public static $model = '\STukenov\MediaField\Models\Media';
     public static $displayInNavigation = false;
     public static $search = ['collection_name', 'path', 'file_name', 'mime_type'];
 

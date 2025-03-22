@@ -1,10 +1,10 @@
 <?php
 
-namespace OptimistDigital\MediaField\Requests;
+namespace STukenov\MediaField\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\App;
-use OptimistDigital\MediaField\Classes\MediaValidator;
+use STukenov\MediaField\Classes\MediaValidator;
 
 class StoreMediaRequest extends FormRequest
 {
