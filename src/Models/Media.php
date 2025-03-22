@@ -35,7 +35,7 @@ class Media extends Model
     protected static function boot()
     {
         parent::boot();
-        static::deleting(function ($model) {
+        static::deleting(function ($model): void {
             $driver = config('nova-media-field.storage_driver');
             $mediaPath = $model->path . $model->file_name;
             Storage::disk($driver)->delete($mediaPath); // Delete media file in storage

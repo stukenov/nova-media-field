@@ -154,12 +154,12 @@ class MediaHandler
             $crop = isset($config['crop']) && $config['crop'];
 
             if (isset($config['width']) && !isset($config['height'])) {
-                $img->resize($config['width'], null, function ($constraint) {
+                $img->resize($config['width'], null, function ($constraint): void {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 });
             } else if (!isset($config['width']) && isset($config['height'])) {
-                $img->resize(null, $config['height'], function ($constraint) {
+                $img->resize(null, $config['height'], function ($constraint): void {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 });
@@ -332,7 +332,7 @@ class MediaHandler
             // If max resize is enabled
             $maxOriginalDimension = config('nova-media-field.max_original_image_dimensions', null);
             if (!empty($maxOriginalDimension)) {
-                $image = $image->resize($maxOriginalDimension, $maxOriginalDimension, function ($constraint) {
+                $image = $image->resize($maxOriginalDimension, $maxOriginalDimension, function ($constraint): void {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 });
