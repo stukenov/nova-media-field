@@ -53,6 +53,6 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "rector/rector": "^2.0"
+    "rector/rector": "^2.3"
   }
 }
