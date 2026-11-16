@@ -28,7 +28,7 @@ This [Laravel Nova](https://nova.laravel.com) package adds a simple media upload
 - Collections
 - Thumbnail generator with custom sizes (also re-generation via command)
 - WebP generator (also re-generation via command)
-- Works with [nova-translatable](https://github.com/stukenov/nova-translatable)
+- Works with [nova-translatable](https://github.com/outl1ne/nova-translatable)
 
 ## Upgrading to v2
 
